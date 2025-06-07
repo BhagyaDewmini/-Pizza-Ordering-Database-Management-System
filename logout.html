@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+</head>
+
+<style>
+
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url("Pizza1.jpg") no-repeat center center fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container h2 {
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.transbox {
+              margin: 30px;
+              background-color: #ffffff;
+              border: 1px solid black;
+              opacity: 0.6;
+            }
+            
+            div.transbox p {
+              margin: 5%;
+              font-weight: bold;
+              color: #000000;
+            }
+
+        
+</style>
+<body>
+    <!-- Checkout form here -->
+    <form id="checkoutForm" onsubmit="checkout(); return false;">
+        <h1>Logout</h1>
+        
+        <!-- Add your checkout form fields here -->
+
+        <button type="submit">Logout</button>
+    </form>
+
+    <script>
+        function checkout() {
+            // Simulate a successful payment
+            alert('Payment successful.');
+            logout();
+        }
+
+        function logout() {
+            // Your actual logout logic here
+            // This can be an AJAX request to the server to destroy the session
+            location.href = "logout.php";
+        }
+        
+    </script>
+</body>
+</html>

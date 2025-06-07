@@ -1,0 +1,122 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Add Font Awesome for icons -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 30px;
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container form label {
+            margin-bottom: 8px;
+            color: #131313;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .container form input, .container form select {
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #000000;
+            border-radius: 6px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .container form input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fcfcfc;
+            cursor: pointer;
+        }
+
+        .container form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .icon {
+            color: #5d9cec;
+            font-size: 24px;
+            margin-right: 8px;
+        }
+
+        .background-login {
+            background: url("Pizza1.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+        .background-redister {
+            background: url("images2.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <title>Login</title>
+</head>
+
+<body class="background-login">
+    <div class="container">
+        <h2><i class="icon fas fa-sign-in-alt"></i>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Perform authentication, check roles, etc.
+            // For this example, let's assume there is an admin with fixed credentials
+            if (username === "bhagya" && password === "bhagya123") {
+                alert("Login as Admin");
+            } else {
+                alert("Login as User");
+            }
+
+            return false; // Prevent form submission for this example
+        }
+
+        function signup() {
+            // Perform user registration logic here
+
+            alert("User Registered");
+
+            return false; // Prevent form submission for this example
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Restaurant</title>
+<style>
+ .form-box {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+ }
+
+ .form-box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    background-size: cover; /* Scales the image to cover the entire form box */
+    background-position: center; /* Centers the image within the form box */
+ }
+ body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url("pizza11.jpg") no-repeat center center fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+        } 
+
+</style>
+</head>
+<body>
+<div class="form-box">
+ <h3>Delivery Methods</h3>
+ <input type="radio" id="dine-in" name="delivery" value="dine-in">
+ <label for="dine-in">Dine-in</label><br>
+ <input type="radio" id="take-away" name="delivery" value="take-away">
+ <label for="take-away">Take Away</label><br>
+ <input type="radio" id="delivery" name="delivery" value="delivery">
+ <label for="delivery">Delivery</label><br>
+
+ <h3>Payment Methods</h3>
+
+ <form action="logout.html">
+   <input type="radio" id="cash" name="payment" value="cash">
+   <label for="cash">Cash</label><br>
+   <input type="submit" value="Submit">
+   </form>
+<br>
+
+<form action="logout.html">
+ <input type="radio" id="cash" name="payment" value="cash">
+ <label for="cash">Cash On Delivery</label><br>
+ <input type="submit" value="Submit">
+ </form>
+<br>
+ <form action="order.html">
+ <input type="radio" id="card" name="payment" value="card">
+ <label for="card">Card Payments</label><br>
+ <input type="submit" value="Submit">
+
+ 
+</form>
+</div>
+</body>
+</html>
